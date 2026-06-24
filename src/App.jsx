@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import TodoItem from './TodoItem';
+import { BiPlus } from "react-icons/bi";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -27,11 +28,11 @@ function App() {
 
   return (
     <div className='todo-app'>
-      <h1>Todo list</h1>
       <div className='add-todo'><input className='todo-input' type="text" placeholder='Add new todo' value={input}
         onChange={(e) => setInput(e.target.value)} />
         <button className='add-button' onClick={addTodo}
-          disabled={input.trim() === ""}>Add</button></div>
+          disabled={input.trim() === ""}><BiPlus size={16} /></button>
+      </div>
       <ul className='todo-list'>
         {todos.map((todo) => (
           <TodoItem
