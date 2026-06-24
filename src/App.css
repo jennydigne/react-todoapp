@@ -23,6 +23,7 @@ body {
   border-radius: 5px;
   border: 1px solid #807e7e;
   padding-left: 5px;
+  font-size: 14px;
 }
 
 .add-button {
@@ -33,10 +34,12 @@ body {
   border: 1px solid darkblue;
   border-radius: 50px;
   color: darkblue;
+  cursor: pointer;
 }
 
 .add-button:disabled {
-  opacity: 80%;
+  opacity: 75%;
+  cursor: auto;
 }
 
 .todo-list {
@@ -47,13 +50,8 @@ body {
   overflow-y: auto;
 }
 
-button {
-  font-size: 12px;
-  cursor: pointer;
-}
-
-button:active {
-  transform: scale(0.98);
+.add-button:active {
+  transform: scale(0.95);
 }
 
 .add-todo {
