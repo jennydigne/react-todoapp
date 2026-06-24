@@ -3,7 +3,7 @@
     align-items: center;
     font-size: 14px;
     justify-content: space-between;
-    gap: 5px;
+    gap: 10px;
     background-color: #dee2e6;
     padding: 5px;
     border-radius: 5px;
@@ -19,22 +19,10 @@
     gap: 5px;
 }
 
-.done-button {
-    background-color: lightgreen;
-    border: 1px solid darkgreen;
-    border-radius: 5px;
+.action-button {
     display: flex;
     align-items: center;
     padding: 5px;
-    color: darkgreen;
+    color: #333;
 }
 
-.delete-button {
-    background-color: lightcoral;
-    border: 1px solid darkred;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    color: darkred;
-}
