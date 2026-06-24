@@ -9,9 +9,14 @@
     border-radius: 5px;
 }
 
-.todo-title {
+.todo-check {
+    display: flex;
+}
+
+.title {
     word-break: break-word;
     margin: 0 2px;
+    color: #333;
 }
 
 .item-buttons {
@@ -24,5 +29,6 @@
     align-items: center;
     padding: 5px;
     color: #333;
+    cursor: pointer;
 }
 

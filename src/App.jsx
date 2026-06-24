@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import TodoItem from './TodoItem';
-import { BiPlus } from "react-icons/bi";
+import { BsPlusLg } from "react-icons/bs";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -31,7 +31,7 @@ function App() {
       <div className='add-todo'><input className='todo-input' type="text" placeholder='Add new todo' value={input}
         onChange={(e) => setInput(e.target.value)} />
         <button className='add-button' onClick={addTodo}
-          disabled={input.trim() === ""}><BiPlus size={16} /></button>
+          disabled={input.trim() === ""}><BsPlusLg size={16} /></button>
       </div>
       <ul className='todo-list'>
         {todos.map((todo) => (
