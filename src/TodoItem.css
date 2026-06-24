@@ -33,3 +33,7 @@
     cursor: pointer;
 }
 
+.action-button:hover {
+    color: black;
+}
+
