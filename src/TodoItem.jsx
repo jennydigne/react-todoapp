@@ -6,7 +6,7 @@ export default function TodoItem({ todo, onToggleDone, onDelete }) {
         <li className="todo-item">
             <div className="todo-check">
                 <span className="action-button" onClick={() => onToggleDone(todo.id)}>
-                    {todo.done ? <BsCheckCircle size={16} /> : <BsCircle size={16} />}
+                    {todo.done ? <BsCheckCircle size={18} /> : <BsCircle size={18} />}
                 </span>
                 <span className="title" style={{ textDecoration: todo.done ? 'line-through' : 'none' }}>
                     {todo.title}</span>

@@ -11,6 +11,7 @@
 
 .todo-check {
     display: flex;
+    align-items: center;
 }
 
 .title {
