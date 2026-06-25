@@ -2,20 +2,25 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .todo-app {
   background-color: #f1f4f6;
   width: 100vw;
-  height: 100%;
+  /* height: 100%; */
   overflow: hidden;
   /* overflow-y: auto; */
   display: flex;
   flex-direction: column;
+  height: 100dvh;
 }
 
-.todo-app::-webkit-scrollbar {
+/* .todo-app::-webkit-scrollbar {
+  display: none;
+} */
+
+.todo-list::-webkit-scrollbar {
   display: none;
 }
 
@@ -80,6 +85,7 @@ body {
   body {
     align-items: center;
     background-color: #79a6a2;
+    height: 100vh;
   }
 
   .todo-app {
