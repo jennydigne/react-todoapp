@@ -32,20 +32,23 @@ function App() {
         e.preventDefault();
         if (input.trim() !== "") addTodo();
       }}>
-        <input
-          className='todo-input'
-          type="text"
-          placeholder='Add new todo'
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-        />
-        <button
-          type='submit'
-          className='add-button'
-          onClick={addTodo}
-          disabled={input.trim() === ""}>
-          <BsPlusLg size={18} />
-        </button>
+        <h1 className='app-title'>My Todo List</h1>
+        <div className='input-container'>
+          <input
+            className='todo-input'
+            type="text"
+            placeholder='Add new todo'
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
+          <button
+            type='submit'
+            className='add-button'
+            onClick={addTodo}
+            disabled={input.trim() === ""}>
+            <BsPlusLg size={18} />
+          </button>
+        </div>
       </form>
       <ul className='todo-list'>
         {todos.map((todo) => (
