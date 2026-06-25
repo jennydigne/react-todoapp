@@ -12,8 +12,7 @@ export default function TodoItem({ todo, onToggleDone, onDelete }) {
                     {todo.title}</span>
             </div>
             <div className="item-buttons">
-
-                <span className="action-button" onClick={() => onDelete(todo.id)}><BsTrash3 size={16} /></span>
+                <span className="action-button" onClick={() => onDelete(todo.id)}><BsTrash3 size={18} /></span>
             </div>
         </li>
     );

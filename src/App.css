@@ -3,6 +3,7 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
+  background-color: #79a6a2;
 }
 
 .todo-app {
@@ -54,7 +55,7 @@ body {
   transform: scale(0.95);
 }
 
-.add-todo {
+.list-header {
   position: sticky;
   top: 0;
   z-index: 10;
