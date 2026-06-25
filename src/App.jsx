@@ -28,13 +28,25 @@ function App() {
 
   return (
     <div className='todo-app'>
-      <div className='list-header'>
-        <input className='todo-input' type="text" placeholder='Add new todo' value={input}
-          onChange={(e) => setInput(e.target.value)} />
-        <button className='add-button' onClick={addTodo}
-          disabled={input.trim() === ""}><BsPlusLg size={18} />
+      <form className='list-header' onSubmit={(e) => {
+        e.preventDefault();
+        if (input.trim() !== "") addTodo();
+      }}>
+        <input
+          className='todo-input'
+          type="text"
+          placeholder='Add new todo'
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+        <button
+          type='submit'
+          className='add-button'
+          onClick={addTodo}
+          disabled={input.trim() === ""}>
+          <BsPlusLg size={18} />
         </button>
-      </div>
+      </form>
       <ul className='todo-list'>
         {todos.map((todo) => (
           <TodoItem
