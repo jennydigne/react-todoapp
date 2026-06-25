@@ -73,8 +73,10 @@ body {
   align-items: center;
   padding: 20px;
   border-bottom: 1px solid #b6b3b3;
-  background-color: #dee2e6;
+  /* background-color: #dee2e6; */
   flex-shrink: 0;
+  background-color: #79a6a2;
+  border-bottom: #587a77;
 }
 
 .todo-title {
@@ -93,5 +95,10 @@ body {
     height: 500px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 1px #393a3d80;
+  }
+
+  .list-header {
+    background-color: #dee2e6;
+    border-bottom: 1px solid #b6b3b3;
   }
 }
