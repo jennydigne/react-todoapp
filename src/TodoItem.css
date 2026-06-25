@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
     background-color: ghostwhite;
     padding: 5px;
     border-radius: 5px;
@@ -23,7 +22,7 @@
 
 .item-buttons {
     display: flex;
-    gap: 5px;
+    gap: 2px;
 }
 
 .action-button {
@@ -36,5 +35,12 @@
 
 .action-button:hover {
     color: black;
+}
+
+.todo-edit-input {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    border: 1px solid #79a6a2;
 }
 

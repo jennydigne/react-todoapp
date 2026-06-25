@@ -24,7 +24,6 @@ body {
   padding-left: 5px;
   font-size: 16px;
   font-family: inherit;
-  font-style: italic;
   background-color: ghostwhite;
   color: #333;
   border: none;
@@ -92,8 +91,8 @@ body {
   }
 
   .todo-app {
-    width: 300px;
-    height: 500px;
+    width: 350px;
+    height: 550px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 1px rgba(57, 58, 61, 0.502);
   }

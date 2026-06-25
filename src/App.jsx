@@ -26,6 +26,12 @@ function App() {
     setTodos(todos.filter((todo) => todo.id !== id));
   }
 
+  const editTodo = (id, newTitle) => {
+    setTodos(todos.map((todo) =>
+      todo.id === id ? { ...todo, title: newTitle } : todo
+    ));
+  }
+
   return (
     <div className='todo-app'>
       <form className='list-header' onSubmit={(e) => {
@@ -44,7 +50,6 @@ function App() {
           <button
             type='submit'
             className='add-button'
-            onClick={addTodo}
             disabled={input.trim() === ""}>
             <BsPlusLg size={18} />
           </button>
@@ -56,7 +61,8 @@ function App() {
             key={todo.id}
             todo={todo}
             onToggleDone={toggleDone}
-            onDelete={deleteTodo} />
+            onDelete={deleteTodo}
+            onEdit={editTodo} />
         ))}
       </ul>
     </div>
