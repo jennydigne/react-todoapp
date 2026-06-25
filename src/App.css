@@ -3,13 +3,12 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-color: #79a6a2;
 }
 
 .todo-app {
   background-color: #f1f4f6;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   overflow-y: auto;
 }
@@ -74,6 +73,7 @@ body {
 @media (min-width: 600px) {
   body {
     align-items: center;
+    background-color: #79a6a2;
   }
 
   .todo-app {
