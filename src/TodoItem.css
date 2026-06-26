@@ -48,10 +48,18 @@
 .todo-edit-input {
     font-family: inherit;
     font-size: inherit;
-    border: 1px solid #79a6a2;
+    border: none;
+    border-bottom: 1px solid #79a6a2;
     line-height: 24px;
     resize: none;
     background-color: transparent;
     field-sizing: content;
+    outline: none;
+    margin-left: 5px;
 }
 
+@media (min-width: 768px) {
+    .todo-edit-input {
+        font-size: 14px;
+    }
+}

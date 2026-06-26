@@ -28,6 +28,7 @@ body {
   color: #333;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  outline: none;
 }
 
 .add-button {
@@ -83,7 +84,7 @@ body {
   align-items: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   body {
     align-items: center;
     height: 100vh;
@@ -95,5 +96,9 @@ body {
     height: 550px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px 1px rgba(57, 58, 61, 0.502);
+  }
+
+  .todo-input {
+    font-size: 14px;
   }
 }
