@@ -33,6 +33,7 @@
 .action-button {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #333;
     cursor: pointer;
     height: 24px;
@@ -47,7 +48,10 @@
 .todo-edit-input {
     font-family: inherit;
     font-size: inherit;
-    border: none;
     border: 1px solid #79a6a2;
+    line-height: 24px;
+    resize: none;
+    background-color: transparent;
+    field-sizing: content;
 }
 

@@ -22,7 +22,7 @@ export default function TodoItem({ todo, onToggleDone, onDelete, onEdit }) {
                     </span>
                 )}
                 {isEditing ? (
-                    <input
+                    <textarea
                         type="text"
                         className="todo-edit-input"
                         value={editText}
